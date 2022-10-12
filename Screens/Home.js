@@ -5,7 +5,10 @@ import { useNavigation } from '@react-navigation/native';
 
 const Home =({navigation})=>{
 
+    const Navegar =async()=>{
 
+        navigation.push('Hora')
+    }
 
 
 
@@ -13,7 +16,7 @@ return (
     <View style={styles.container}>
     <Text style={styles.iniciarSesion}>Elegir Boton</Text>
 
-    <Button style={styles.button}>  </Button>
+    <Button style={styles.button} onPress={Navegar}>  </Button>
     <Button style={styles.button}>  </Button>
     <Button style={styles.button}>  </Button>
     <Button style={styles.button}>  </Button>
